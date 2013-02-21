@@ -43,10 +43,10 @@ border-top:3px solid #000;
 }
 
 #back1{
-background:fixed url(../img/back2.png) repeat;
+background:fixed url(/img/back2.png) repeat;
 }
 #back2{
-background:fixed url(../img/back1.png) repeat;
+background:fixed url(/img/back1.png) repeat;
 }
 
 #lang,#lang li,#lang ul{
@@ -61,7 +61,7 @@ position:absolute;
 top:4px;
 right:0px;
 font-size:94%;
-background:url(../img/lang.png) top left no-repeat;
+background:url(/img/lang.png) top left no-repeat;
 height:24px;
 }
 #lang>li>ul{
@@ -91,7 +91,7 @@ color:#5c5c5c;
 }
 #lang>li>ul>li:hover>a{
 color:#000;
-background:url(../img/lang.png) left no-repeat;
+background:url(/img/lang.png) left no-repeat;
 }
 
 #logo{
@@ -209,7 +209,7 @@ font-family:'UbuntuBoldItalic',sans-serif;
 }
 #menufor>li:first-child+li>a{
 color:#2c6fad;
-background-image:url(../img/icon-ind.png);
+background-image:url(/img/icon-ind.png);
 }
 #menufor>li:first-child+li:hover>a{
 color:#fff;
@@ -217,7 +217,7 @@ background-color:#2c6fad;
 }
 #menufor>li:first-child+li+li>a{
 color:#e67711;
-background-image:url(../img/icon-bus.png);
+background-image:url(/img/icon-bus.png);
 }
 #menufor>li:first-child+li+li:hover>a{
 color:#fff;
@@ -225,7 +225,7 @@ background-color:#e67711;
 }
 #menufor>li:first-child+li+li+li>a{
 color:#0c920c;
-background-image:url(../img/icon-org.png);
+background-image:url(/img/icon-org.png);
 }
 #menufor>li:first-child+li+li+li:hover>a{
 color:#fff;
@@ -233,7 +233,7 @@ background-color:#0c920c;
 }
 #menufor>li:first-child+li+li+li+li>a{
 color:#000;
-background-image:url(../img/icon-dev.png);
+background-image:url(/img/icon-dev.png);
 }
 #menufor>li:first-child+li+li+li+li:hover>a{
 color:#fff;
@@ -241,7 +241,7 @@ background-color:#000;
 }
 #menufor>li:first-child+li+li+li+li+li>a{
 color:#cb212d;
-background-image:url(../img/icon-ent.png);
+background-image:url(/img/icon-ent.png);
 }
 #menufor>li:first-child+li+li+li+li+li:hover>a{
 color:#fff;
@@ -397,41 +397,41 @@ border-top:#cfcfcf 2px solid;
 
 @font-face{
 font-family:'UbuntuRegular';
-src:url('../font/ubuntu-r-webfont.eot');
-src:url('../font/ubuntu-r-webfont.eot?iefix') format('eot'),
-url('../font/ubuntu-r-webfont.woff') format('woff'),
-url('../font/ubuntu-r-webfont.ttf') format('truetype'),
-url('../font/ubuntu-r-webfont.svg#webfontKT0zjHSC') format('svg');
+src:url('/font/ubuntu-r-webfont.eot');
+src:url('/font/ubuntu-r-webfont.eot?iefix') format('eot'),
+url('/font/ubuntu-r-webfont.woff') format('woff'),
+url('/font/ubuntu-r-webfont.ttf') format('truetype'),
+url('/font/ubuntu-r-webfont.svg#webfontKT0zjHSC') format('svg');
 font-weight:normal;
 font-style:normal;
 }
 @font-face{
 font-family:'UbuntuItalic';
-src:url('../font/ubuntu-ri-webfont.eot');
-src:url('../font/ubuntu-ri-webfont.eot?iefix') format('eot'),
-url('../font/ubuntu-ri-webfont.woff') format('woff'),
-url('../font/ubuntu-ri-webfont.ttf') format('truetype'),
-url('../font/ubuntu-ri-webfont.svg#webfontGetaoUfe') format('svg');
+src:url('/font/ubuntu-ri-webfont.eot');
+src:url('/font/ubuntu-ri-webfont.eot?iefix') format('eot'),
+url('/font/ubuntu-ri-webfont.woff') format('woff'),
+url('/font/ubuntu-ri-webfont.ttf') format('truetype'),
+url('/font/ubuntu-ri-webfont.svg#webfontGetaoUfe') format('svg');
 font-weight:normal;
 font-style:normal;
 }
 @font-face{
 font-family:'UbuntuBold';
-src:url('../font/ubuntu-b-webfont.eot');
-src:url('../font/ubuntu-b-webfont.eot?iefix') format('eot'),
-url('../font/ubuntu-b-webfont.woff') format('woff'),
-url('../font/ubuntu-b-webfont.ttf') format('truetype'),
-url('../font/ubuntu-b-webfont.svg#webfontEreyFiHC') format('svg');
+src:url('/font/ubuntu-b-webfont.eot');
+src:url('/font/ubuntu-b-webfont.eot?iefix') format('eot'),
+url('/font/ubuntu-b-webfont.woff') format('woff'),
+url('/font/ubuntu-b-webfont.ttf') format('truetype'),
+url('/font/ubuntu-b-webfont.svg#webfontEreyFiHC') format('svg');
 font-weight:normal;
 font-style:normal;
 }
 @font-face{
 font-family:'UbuntuBoldItalic';
-src:url('../font/ubuntu-bi-webfont.eot');
-src:url('../font/ubuntu-bi-webfont.eot?iefix') format('eot'),
-url('../font/ubuntu-bi-webfont.woff') format('woff'),
-url('../font/ubuntu-bi-webfont.ttf') format('truetype'),
-url('../font/ubuntu-bi-webfont.svg#webfontf1YowZka') format('svg');
+src:url('/font/ubuntu-bi-webfont.eot');
+src:url('/font/ubuntu-bi-webfont.eot?iefix') format('eot'),
+url('/font/ubuntu-bi-webfont.woff') format('woff'),
+url('/font/ubuntu-bi-webfont.ttf') format('truetype'),
+url('/font/ubuntu-bi-webfont.svg#webfontf1YowZka') format('svg');
 font-weight:normal;
 font-style:normal;
 }
