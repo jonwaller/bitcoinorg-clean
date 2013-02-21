@@ -1,0 +1,6 @@
+DOWNLOAD_VERSION: 0.8.0
+aliases:
+  s_nakamoto: Satoshi Nakamoto
+  --author=Satoshi Nakamoto: Satoshi Nakamoto
+  gavinandresen: Gavin Andresen
+  tcatm: Nils Schneider

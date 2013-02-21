@@ -1,0 +1,87 @@
+---
+ALERT_CLASS:
+ALERT:
+---
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>{{ page.title }}</title>
+<link rel="stylesheet" href="/en/css/style.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/en/js/scroll.js"></script>
+<link rel="shortcut icon" href="/en/favicon.png">
+</head>
+<body>
+  <div id="container1">
+    <div class="wrap">
+    <ul id="lang">
+      <li><a href="/en/">English</a>
+      <ul>
+        <li><a href="#">Français</a></li>
+      </ul>
+      </li>
+    </ul>
+    <div id="logo"><a href="/en/"><span>Bitcoin</span></a></div>
+    <div id="logotext">= { An Open Experimental Digital Currency }</div>
+    <ul id="menufor">
+      <li><a>For</a></li>
+      <li><a href="/en/bitcoin-for-individuals">Individuals</a></li>
+      <li><a href="/en/bitcoin-for-businesses">Businesses</a></li>
+      <li><a href="/en/bitcoin-for-organisations">Organisations</a></li>
+      <li><a href="/en/bitcoin-for-developers">Developers</a></li>
+      <li><a href="/en/bitcoin-for-enthusiasts">Enthusiasts</a></li>
+    </ul>
+    </div>
+  </div>
+  <div id="container2">
+    <ul id="menu" class="wrap">
+      <li><a href="/en/how-it-works">How it works</a></li>
+      <li><a href="/en/vocabulary">Vocabulary</a></li>
+      <li><a href="/en/ressources">Ressources</a></li>
+      <li><a href="/en/community">Community</a></li>
+      <li><a href="/en/development">Development</a></li>
+      <li><a href="https://bitcoinfoundation.org/" target="_blank">Foundation</a></li>
+      <li><a href="/en/about">About</a></li>
+    </ul>
+  </div>
+  <div id="container3">
+    <div id="back1"><div id="back2">
+    <div class="wrap">
+{% if page.ALERT %}
+  <div class="alert-message {{ page.ALERT_CLASS }}">
+    {{ page.ALERT }}
+  </div>
+{% endif %}
+      <div id="content">
+    {{ content }}
+      </div>
+      <div id="rightbox">
+        <div id="download">
+          <a id="download-ubuntu" href="https://launchpad.net/~bitcoin/+archive/bitcoin"><img src="/en/img/ico-ubu.png">Download Bitcoin<br>Version {{ site.DOWNLOAD_VERSION }}</a>
+          <a id="download-windows" href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ site.DOWNLOAD_VERSION }}/bitcoin-{{ site.DOWNLOAD_VERSION }}-win32-setup.exe/download"><img src="/en/img/ico-win.png">Download Bitcoin<br>Version {{ site.DOWNLOAD_VERSION }}</a>
+          <a id="download-mac" href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ site.DOWNLOAD_VERSION }}/bitcoin-{{ site.DOWNLOAD_VERSION }}-macosx.dmg/download"><img src="/en/img/ico-mac.png">Download Bitcoin<br>Version {{ site.DOWNLOAD_VERSION }}</a>
+          <a href="/en/download">or choose your client!</a>
+          <script type="text/javascript">
+          if(navigator.userAgent.indexOf('Mac')!==-1)OS='mac';
+          else if(navigator.userAgent.indexOf('Linux')!==-1)OS='ubuntu';
+          else OS='windows';
+          document.getElementById('download-'+OS).style.display='block';
+          </script>
+        </div>
+        <div id="before">
+          <a href="/en/you-need-to-know"><img src="/en/img/ico-warn.png">You need to know</a>
+        </div>
+        <div id="start">
+          <a href="http://weusecoins.com" target="_blank"><img src="/en/img/ico-start.png">Get started</a>
+        </div>
+        <div id="support">
+          <a href="/en/support-bitcoin"><img src="/en/img/ico-involve.png">Support Bitcoin !</a>
+        </div>
+      </div>
+      <div id="footer"><div>© <a href="https://bitcoinfoundation.org/" target="_blank">The Bitcoin Foundation</a> 2009–2013 Released under the <a href="http://creativecommons.org/licenses/MIT/" target="_blank">MIT license</a></div></div>
+    </div>
+    </div></div>
+  </div>
+</body>
+
+</html>
