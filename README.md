@@ -11,6 +11,14 @@ Installing dependencies
 * run jekyll
 * output will be in \_site/
 
+# Translation
+
+* Find the two letter ISO 639-1 code for your language (fr, en, jp)
+* Run ./_contrib/translate (lang)
+* Rename html files in (lang)/ according to your language. And update links in _layouts/base-(lang).html and (lang)/*.html to reflect your changes.
+* Translate all .html and images files in (lang)/ and _layouts/base-(lang).html
+* Add your language in the language bar in all _layouts/base-*.html
+
 ## Advanced Usage
 
 ### Alerts
@@ -23,7 +31,6 @@ Example:
 ALERT_CLASS: error
 ALERT: <strong>Security alert:</strong> Please upgrade to 0.3.25 as soon as possible!
 ```
-
 
 will produce a red alert box. Possible classes are: error (red), info (blue), success (green) and warning (yellow)
 
