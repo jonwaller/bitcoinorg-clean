@@ -57,16 +57,15 @@ ALERT:
       </div>
       <div id="rightbox">
         <div id="download">
-          <a id="download-ubuntu" href="https://launchpad.net/~bitcoin/+archive/bitcoin"><img src="/en/img/ico-ubu.png">Download Bitcoin<br>Version {{ site.DOWNLOAD_VERSION }}</a>
-          <a id="download-windows" href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ site.DOWNLOAD_VERSION }}/bitcoin-{{ site.DOWNLOAD_VERSION }}-win32-setup.exe/download"><img src="/en/img/ico-win.png">Download Bitcoin<br>Version {{ site.DOWNLOAD_VERSION }}</a>
-          <a id="download-mac" href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ site.DOWNLOAD_VERSION }}/bitcoin-{{ site.DOWNLOAD_VERSION }}-macosx.dmg/download"><img src="/en/img/ico-mac.png">Download Bitcoin<br>Version {{ site.DOWNLOAD_VERSION }}</a>
-          <a href="/en/download">or choose your client!</a>
+          <a href="/en/download">
           <script type="text/javascript">
           if(navigator.userAgent.indexOf('Mac')!==-1)OS='mac';
-          else if(navigator.userAgent.indexOf('Linux')!==-1)OS='ubuntu';
-          else OS='windows';
-          document.getElementById('download-'+OS).style.display='block';
+          else if(navigator.userAgent.indexOf('Linux')!==-1)OS='ubu';
+          else OS='win';
+          document.write('<img src="/en/img/ico-'+OS+'.png">');
           </script>
+          Download Bitcoin
+          </a>
         </div>
         <div id="before">
           <a href="/en/you-need-to-know"><img src="/en/img/ico-warn.png">You need to know</a>

@@ -124,64 +124,28 @@ border-radius:5px;
 -webkit-border-radius:5px;
 padding:5px;
 }
-#download{
-margin-bottom:10px;
+#download>a:first-child,#before>a:first-child,#start>a:first-child,#support>a:first-child{
 padding:10px;
-background-color:#e67711;
-background-image:linear-gradient(bottom, #cc6100 14%, #e7750c 70%);
-background-image:-o-linear-gradient(bottom, #cc6100 14%, #e7750c 70%);
-background-image:-moz-linear-gradient(bottom, #cc6100 14%, #e7750c 70%);
-background-image:-webkit-linear-gradient(bottom, #cc6100 14%, #e7750c 70%);
-background-image:-ms-linear-gradient(bottom, #cc6100 14%, #e7750c 70%);
+color:#fff;
+display:block;
+text-align:left;
+margin-bottom:10px;
+text-decoration:none;
+font-weight:bold;
 border-radius:5px;
 -webkit-border-radius:5px;
 }
-#download:hover{
-background-image:linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
-background-image:-o-linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
-background-image:-moz-linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
-background-image:-webkit-linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
-background-image:-ms-linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
-}
-#download>a,#download>a:link,#download>a:active,#download>a:visited{
-display:block;
-text-align:center;
-text-decoration:none;
-color:#fff;
-}
-#download>a:hover{
-text-decoration:underline;
-}
-#download #download-ubuntu,#download #download-linux,#download #download-windows,#download #download-mac{
-display:none;
-text-align:left;
-text-decoration:none;
-font-weight:bold;
-padding-bottom:4px;
-}
-#download>a>img{
-float:left;
-}
-#download>a>img,#before>a>img,#start>a>img,#support>a>img{
-margin-right:6px;
+#download img,#before img,#start img,#support img{
 vertical-align:middle;
+margin-right:10px;
 }
 #before>a:first-child,#start>a:first-child,#support>a:first-child{
-padding:10px;
 background-color:#2c6fad;
-color:#fff;
-display:block;
-text-align:left;
-margin-bottom:10px;
-text-decoration:none;
-font-weight:bold;
 background-image:linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
 background-image:-o-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
 background-image:-moz-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
 background-image:-webkit-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
 background-image:-ms-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
-border-radius:5px;
--webkit-border-radius:5px;
 }
 #before>a:first-child:hover,#start>a:first-child:hover,#support>a:first-child:hover{
 background-image:linear-gradient(bottom, #2c6fad 14%, #2c6fad 70%);
@@ -189,6 +153,22 @@ background-image:-o-linear-gradient(bottom, #2c6fad 14%, #2c6fad 70%);
 background-image:-moz-linear-gradient(bottom, #2c6fad 14%, #2c6fad 70%);
 background-image:-webkit-linear-gradient(bottom, #2c6fad 14%, #2c6fad 70%);
 background-image:-ms-linear-gradient(bottom, #2c6fad 14%, #2c6fad 70%);
+}
+#download>a:first-child{
+padding:15px 10px;
+background-color:#e67711;
+background-image:linear-gradient(bottom, #cc6100 14%, #e7750c 70%);
+background-image:-o-linear-gradient(bottom, #cc6100 14%, #e7750c 70%);
+background-image:-moz-linear-gradient(bottom, #cc6100 14%, #e7750c 70%);
+background-image:-webkit-linear-gradient(bottom, #cc6100 14%, #e7750c 70%);
+background-image:-ms-linear-gradient(bottom, #cc6100 14%, #e7750c 70%);
+}
+#download>a:first-child:hover{
+background-image:linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
+background-image:-o-linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
+background-image:-moz-linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
+background-image:-webkit-linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
+background-image:-ms-linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
 }
 
 #menufor{
