@@ -49,28 +49,32 @@ background:fixed url(../img/back2.png) repeat;
 background:fixed url(../img/back1.png) repeat;
 }
 
+#lang,#lang li,#lang ul{
+display:block;
+list-style:none;
+padding:0px;
+margin:0px;
+text-align:left;
+}
 #lang{
 position:absolute;
 top:4px;
 right:0px;
 font-size:94%;
-padding:0;
-background:url(../img/lang.png) left no-repeat;
-list-style:none;
-margin:0px;
-}
-#lang li,#lang ul{
-list-style:none;
-padding:0px;
-margin:0px;
+background:url(../img/lang.png) top left no-repeat;
+height:24px;
 }
 #lang>li>ul{
 display:none;
-position:absolute;
 left:0px;
-top:20px;
-text-align:left;
+top:18px;
+position:absolute;
 background-color:#fff;
+padding:5px;
+margin-left:-5px;
+border-radius:5px;
+-webkit-border-radius:5px;
+z-index:100;
 }
 #lang>li:hover>ul{
 display:block;
