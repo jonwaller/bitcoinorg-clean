@@ -8,5 +8,5 @@ RewriteRule ^(.+)$ $1.html [L]
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.+)$ $1.php [L]
 RewriteRule ^about\.html$ /en/about [R=301,L]
-RewriteRule ^clients\.html$ /en/download [R=301,L]
+RewriteRule ^clients\.html$ /en/choose-your-wallet [R=301,L]
 RewriteRule ^news\.html$ /en/version-history [R=301,L]
