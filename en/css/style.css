@@ -336,8 +336,13 @@ font-weight:bold;
 font-weight:normal;
 }
 
+.list>li{
+padding:5px 0px 5px 0px;
+}
+
 .preview{
 width:900px;
+margin-top:30px;
 }
 .previewcol{
 clear:both;
@@ -350,7 +355,47 @@ float:left;
 width:270px;
 text-align:justify;
 padding-left:40px;
-font-size:14px;
+position:relative;
+}
+.previewrow>h2{
+font-size:18px;
+}
+.previewrow>span>span{
+opacity:0;
+transition:opacity 400ms ease-out;
+-moz-transition:opacity 400ms ease-out;
+-webkit-transition:opacity 400ms ease-out;
+width:0px;
+height:0px;
+display:inline-block;
+position:absolute;
+left:-110px;
+right:-110px;
+padding:0px 30px;
+margin-top:-270px;
+background:url(/img/bubble.png) bottom center no-repeat;
+z-index:1000;
+overflow:hidden;
+}
+.previewrow>span>span>h2{
+margin-top:20px;
+}
+.previewrow>span:hover>span{
+opacity:1;
+width:auto;
+height:280px;
+}
+.previewrow>span{
+display:inline-block;
+position:relative;
+}
+.previewrow>span>span>h2:first-child+p+p{
+text-align:center;
+}
+.previewrow a,.previewrow a:link,.previewrow a:visited,.previewrow a:active{
+font-weight:bold;
+text-decoration:none;
+font-size:20px;
 }
 
 .alert-message{
@@ -377,6 +422,11 @@ border-color:#1988aa;
 .versiontext{
 text-align:left;
 }
+
+.download a{
+font-size:20px;
+}
+
 
 #footer{
 position:relative;
