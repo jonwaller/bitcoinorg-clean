@@ -18,9 +18,7 @@ Installing dependencies
 * Rename html files in (lang)/ according to your language. And update links in _layouts/base-(lang).html and (lang)/*.html to reflect your changes.
 * Translate all .html and images files in (lang)/ and _layouts/base-(lang).html
 * Add your language in the language bar in all _layouts/base-*.html
-
-* A tip for translators, you can preview your work in a simple Google chrome browser with no HTTP server.
-* Just open the javascript console with CTRL + SHIFT + J and use the following command to make the page editable : document.body.contentEditable=true
+* A tips for translators, you can preview your work in a simple Google chrome browser with no HTTP server. Just go to the existing english page, open the javascript console with CTRL + SHIFT + J and use the following command to make the page editable : document.body.contentEditable=true
 
 ## Advanced Usage
 
