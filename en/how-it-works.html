@@ -2,32 +2,36 @@
 layout: base-en
 title: How it works? - Bitcoin
 ---
-<h1>How Bitcoin works?</h1>
-<p>Oh oh, here is a question that mixed up many people on earth. Let's try to explain it.. again!
+<h1>How does Bitcoin work?</h1>
+
+<p>OK, this is a question that often causes confusion. Here's a quick explanation!
 
 <h2>You might not need to know all this</h2>
-<p>But first, lets put in perspective that trying to understand a system is often the best way to end up more confused by technical details that most users don't need to know. If you are seeking for confidence, you should probably stick to the fact that Bitcoin works and has been questionned since many years.</p>
+
+<p>But firstly, let's remember that you don't need to understand all the details to use Bitcoin or even have confidence
+   that it works. If you can't follow this explanation, you can take note that the system has been working for multiple
+   years and has not been hacked.</p>
 
 <p><img src="/en/img/blockchain.png" alt="Bitcoin overview" /></p>
 
 <h2>Blockchain</h2>
 <p>
-The entire Bitcoin network relies on the blockchain. Which is a <b>shared public transaction log</b>, in chronological order. All confirmed transactions are included in the blockchain with no exception. And there is a reason for this, the blockchain is used to check the balance of a Bitcoin address during a transaction. The integrity of the blockchain is enforced by cryptography.
+The entire Bitcoin network relies on the blockchain. Which is a <b>shared public transaction log</b>, in chronological order. All confirmed transactions are included in the blockchain with no exception. And there is a reason for this, the blockchain is used to check the balance of a Bitcoin address during a transaction. The integrity of the blockchain is enforced with cryptography.
 </p>
 
 
 <h2>Transaction</h2>
 <p>
-A transaction is <b>a transfer of value between Bitcoin addresses</b> that is later included in the blockchain. Bitcoin softwares keep a secret piece of data called a private key for each Bitcoin address. Private keys are used to sign each transactions, providing a mathematical proof that they come from their owner. The signature also prevent the transaction to be altered by anybody once it has been issued. All transactions are broadcasted between users and confirmed by the network in the following minutes through mining.
+A transaction is <b>a transfer of value between Bitcoin addresses</b> that gets included in the blockchain. Bitcoin wallets keep a secret piece of data called a <i>private key</i> for each Bitcoin address. Private keys are used to sign transactions, providing a mathematical proof that they come from the owner of the addresses. The signature also prevents the transaction from being altered by anybody once it has been issued. All transactions are broadcast between users and confirmed by the network in the following minutes, through a process called <i>mining</i>.
 </p>
 
 <h2>Mining</h2>
 <p>
-Mining is a <b>distributed consensus system</b> that is used to include and confirm waiting transactions in the blockchain. It enforces a chronological order in the blockchain, protects the neutrality of the network and prevents the blockchain to differ between users. To be confirmed, transactions must be packed in a block that must fit very strict cryptographic rules that will be verified by the network. These rules prevent any previous block to be modified without breaking the logic of all following blocks. And they create the equivalence of a competitive lottery that prevents any individual to consecutively write on the blockchain. Which would otherwise allow individuals to reverse their own transactions and double spend Bitcoins.
+Mining is a <b>distributed consensus system</b> that is used to include and confirm waiting transactions in the blockchain. It enforces a chronological order in the blockchain, protects the neutrality of the network and stops different computers disagreeing on the state of the system. To be confirmed, transactions must be packed in a block that fits very strict cryptographic rules that will be verified by the network. These rules prevent any previous block from being modified without invalidating all following blocks. And it creates the equivalent of a competitive lottery that prevents any individual from replacing parts of the blockchain and thus rolling back their own spends.
 </p>
 
 
 <h2>Going down the rabbit hole</h2>
 <p>
-Fascinating.. However this is only a very short and concise summary of the system. If you want to get into the details, you can go down the rabbit hole and explore the <a href="https://en.bitcoin.it/wiki/Main_Page" target="_blank">Bitcoin wiki</a>.
+This is only a very short and concise summary of the system. If you want to get into the details, you can <a href="http://www.bitcoin.org/bitcoin.pdf">read the original paper</a> that describes the systems design, and explore the <a href="https://en.bitcoin.it/wiki/Main_Page" target="_blank">Bitcoin wiki</a>.
 </p>
