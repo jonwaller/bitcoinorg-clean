@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="icon-ind.svg"
-   inkscape:export-filename="/var/www/en/img/icon-dev.png"
+   inkscape:export-filename="/media/X/bitcoin.org/bitcoin.org/img/icon-ind2.png"
    inkscape:export-xdpi="67"
    inkscape:export-ydpi="67">
   <defs
@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.197802"
-     inkscape:cx="4.5327129"
-     inkscape:cy="24.302278"
+     inkscape:zoom="11.313709"
+     inkscape:cx="6.3898865"
+     inkscape:cy="20.367175"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -57,19 +57,19 @@
      inkscape:groupmode="layer">
     <path
        style="fill:#2c6fad;fill-opacity:1;stroke:#2c6fad;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 6.0726203,27.624142 19.3788037,0.267909 c 0,0 0.722669,-8.957079 -2.232581,-12.502453 C 21.000281,12.728019 19.0035,12.48294 15.538764,12.442591 12.145732,12.403081 10.490046,12.793316 8.3052012,15.389598 5.4087335,18.831512 5.9833171,27.266929 5.9833171,27.266929 z"
+       d="m 6.6913387,27.8474 19.4011293,0.04465 c 0.311197,-4.070529 0.112466,-9.76336 -2.254907,-12.721203 -1.72185,-2.151314 -4.215343,-2.687907 -7.680079,-2.728256 -3.393032,-0.03951 -5.33922,0.554856 -7.2335624,2.947007 C 6.600126,17.987549 6.426375,23.689105 6.6913387,27.8474 z"
        id="path3883"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccssscc" />
+       sodipodi:nodetypes="ccsscc" />
     <path
        sodipodi:type="arc"
-       style="opacity:0.98999999000000005;fill:#2c6fad;fill-opacity:1;stroke:#2c6fad;stroke-width:4.05000019000000044;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.98999999;fill:#2c6fad;fill-opacity:1;stroke:#2c6fad;stroke-width:4.05000019;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path3885"
        sodipodi:cx="16.878313"
        sodipodi:cy="5.9234538"
        sodipodi:rx="4.0186458"
        sodipodi:ry="3.5721295"
        d="m 20.896959,5.9234538 a 4.0186458,3.5721295 0 1 1 -8.037292,0 4.0186458,3.5721295 0 1 1 8.037292,0 z"
-       transform="translate(-0.80372916,1.5181551)" />
+       transform="translate(-0.2069098,1.5181551)" />
   </g>
 </svg>

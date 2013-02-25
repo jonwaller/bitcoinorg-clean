@@ -19,7 +19,6 @@ title: How does Bitcoin work? - Bitcoin
 The entire Bitcoin network relies on the blockchain. Which is a <b>shared public transaction log</b>, in chronological order. All confirmed transactions are included in the blockchain with no exception. And there is a reason for this, the blockchain is used to check the balance of a Bitcoin address during a transaction. The integrity of the blockchain is enforced with cryptography.
 </p>
 
-
 <h2>Transaction</h2>
 <p>
 A transaction is <b>a transfer of value between Bitcoin addresses</b> that gets included in the blockchain. Bitcoin wallets keep a secret piece of data called a <i>private key</i> for each Bitcoin address. Private keys are used to sign transactions, providing a mathematical proof that they come from the owner of the addresses. The signature also prevents the transaction from being altered by anybody once it has been issued. All transactions are broadcast between users and confirmed by the network in the following minutes, through a process called <i>mining</i>.
@@ -29,7 +28,6 @@ A transaction is <b>a transfer of value between Bitcoin addresses</b> that gets 
 <p>
 Mining is a <b>distributed consensus system</b> that is used to include and confirm waiting transactions in the blockchain. It enforces a chronological order in the blockchain, protects the neutrality of the network and stops different computers disagreeing on the state of the system. To be confirmed, transactions must be packed in a block that fits very strict cryptographic rules that will be verified by the network. These rules prevent any previous block from being modified without invalidating all following blocks. And it creates the equivalent of a competitive lottery that prevents any individual from replacing parts of the blockchain and thus rolling back their own spends.
 </p>
-
 
 <h2>Going down the rabbit hole</h2>
 <p>
