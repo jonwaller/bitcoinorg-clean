@@ -381,6 +381,9 @@ height:280px;
 display:inline-block;
 position:relative;
 }
+.previewrow>span>span>h2:first-child+p{
+font-size:15px;
+}
 .previewrow>span>span>h2:first-child+p+p{
 text-align:center;
 }
