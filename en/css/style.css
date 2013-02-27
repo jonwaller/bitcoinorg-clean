@@ -289,12 +289,23 @@ background-color:#fff;
 min-height:400px;
 }
 
+.index,.index ul,.index li{
+list-style:none;
+padding:0px;
+margin:0px;
+}
 .index{
 padding:20px;
 border:2px dashed #4892b2;
 display:inline-block;
 }
-.index>a,.index>a:link,.index>a:active,.index>a:visited{
+.index>li>a{
+font-weight:bold;
+}
+.index>ul{
+padding:20px 0px 20px 20px;
+}
+.index a,.index a:link,.index a:active,.index a:visited{
 display:block;
 text-decoration:none;
 }
