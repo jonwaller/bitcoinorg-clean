@@ -381,10 +381,18 @@ height:280px;
 display:inline-block;
 position:relative;
 }
-.previewrow>span>span>h2:first-child+p{
+.previewrow>span>span>div{
+position:absolute;
+top:28px;
+right:30px;
+}
+.previewrow>span>span>div>img{
+margin-left:4px;
+}
+.previewrow>span>span>h2:first-child+div+p{
 font-size:15px;
 }
-.previewrow>span>span>h2:first-child+p+p{
+.previewrow>span>span>h2:first-child+div+p+p{
 text-align:center;
 }
 .previewrow a,.previewrow a:link,.previewrow a:visited,.previewrow a:active{
