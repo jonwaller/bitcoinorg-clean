@@ -14,8 +14,8 @@
    id="svg2984"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="cpdomain.svg"
-   inkscape:export-filename="/var/www/img/icon-software-wallet.png"
+   sodipodi:docname="wallet-online.svg"
+   inkscape:export-filename="/media/X/bitcoin.org/bitcoin.org/img/icon-wallet-online.png"
    inkscape:export-xdpi="28.799999"
    inkscape:export-ydpi="28.799999">
   <defs
@@ -28,7 +28,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="1.8912427"
+     inkscape:cx="-47.101155"
      inkscape:cy="47.894698"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -97,7 +97,7 @@
        sodipodi:nodetypes="ccccccccccccssaccccccccccccccccccccccccccccccccccccccccccccccccccc" />
     <path
        sodipodi:type="arc"
-       style="opacity:0.98999999;fill:none;stroke:#000000;stroke-width:3.83055568;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.98999999000000005;fill:none;stroke:#000000;stroke-width:7.13060841;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path2992-7"
        sodipodi:cx="49.750011"
        sodipodi:cy="49.744911"
