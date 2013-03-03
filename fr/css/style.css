@@ -214,7 +214,7 @@ font-family:'UbuntuBoldItalic',sans-serif;
 }
 #menufor>li:first-child+li>a{
 color:#2c6fad;
-background-image:url(/img/icon-ind.png?1);
+background-image:url(/img/for_ind.png);
 }
 #menufor>li:first-child+li:hover>a{
 color:#fff;
@@ -222,7 +222,7 @@ background-color:#2c6fad;
 }
 #menufor>li:first-child+li+li>a{
 color:#e67711;
-background-image:url(/img/icon-bus.png?1);
+background-image:url(/img/for_org.png);
 }
 #menufor>li:first-child+li+li:hover>a{
 color:#fff;
@@ -230,7 +230,7 @@ background-color:#e67711;
 }
 #menufor>li:first-child+li+li+li>a{
 color:#0c920c;
-background-image:url(/img/icon-dev.png?1);
+background-image:url(/img/for_dev.png);
 }
 #menufor>li:first-child+li+li+li:hover>a{
 color:#fff;
@@ -238,7 +238,7 @@ background-color:#0c920c;
 }
 #menufor>li:first-child+li+li+li+li>a{
 color:#cb212d;
-background-image:url(/img/icon-ent.png?1);
+background-image:url(/img/for_ent.png);
 }
 #menufor>li:first-child+li+li+li+li:hover>a{
 color:#fff;
