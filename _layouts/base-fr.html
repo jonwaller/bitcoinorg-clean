@@ -1,6 +1,30 @@
 ---
 ALERT_CLASS:
 ALERT:
+menufor:
+- text: Particuliers
+  url: /fr/bitcoin-pour-particuliers
+- text: Organisations
+  url: /fr/bitcoin-pour-organisations
+- text: Développeurs
+  url: /fr/bitcoin-pour-developpeurs
+- text: Passionnés
+  url: /fr/bitcoin-pour-passionnes
+menu:
+- text: Comment ça marche
+  url: /fr/comment-ca-marche
+- text: Vocabulaire
+  url: /fr/vocabulaire
+- text: Ressources
+  url: /fr/ressources
+- text: Communauté
+  url: /fr/communaute
+- text: Développement
+  url: /fr/developpement
+- text: Fondation
+  url: https://bitcoinfoundation.org/
+- text: À propos
+  url: /fr/a-propos
 ---
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="fr">
@@ -25,22 +49,27 @@ ALERT:
     <div id="logotext">= { Une Monnaie Virtuelle Ouverte Et Expérimentale }</div>
     <ul id="menufor">
       <li><a>Pour</a></li>
-      <li><a href="/fr/bitcoin-pour-particuliers">Particuliers</a></li>
-      <li><a href="/fr/bitcoin-pour-organisations">Organisations</a></li>
-      <li><a href="/fr/bitcoin-pour-developpeurs">Développeurs</a></li>
-      <li><a href="/fr/bitcoin-pour-passionnes">Passionnés</a></li>
+        {% for link in page.menufor %}
+        {% assign active = nil %}
+        {% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}
+        {% if page.url == fullurl %}
+          {% assign active = 'active' %}
+        {% endif %}
+        <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% endfor %}
     </ul>
     </div>
   </div>
   <div id="container2">
     <ul id="menu" class="wrap">
-      <li><a href="/fr/comment-ca-marche">Comment ça marche</a></li>
-      <li><a href="/fr/vocabulaire">Vocabulaire</a></li>
-      <li><a href="/fr/ressources">Ressources</a></li>
-      <li><a href="/fr/communaute">Communauté</a></li>
-      <li><a href="/fr/developpement">Développement</a></li>
-      <li><a href="https://bitcoinfoundation.org/" target="_blank">Fondation</a></li>
-      <li><a href="/fr/a-propos">À propos</a></li>
+        {% for link in page.menu %}
+        {% assign active = nil %}
+        {% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}
+        {% if page.url == fullurl %}
+          {% assign active = 'active' %}
+        {% endif %}
+        <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% endfor %}
     </ul>
   </div>
   <div id="container3">
