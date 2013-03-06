@@ -1,4 +1,9 @@
 DOWNLOAD_VERSION: 0.8.0
+langs:
+- langcode: fr
+  langtext: Français
+- langcode: en
+  langtext: English
 aliases:
   s_nakamoto: Satoshi Nakamoto
   --author=Satoshi Nakamoto: Satoshi Nakamoto

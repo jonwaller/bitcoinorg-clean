@@ -227,6 +227,9 @@ font-family:'UbuntuBoldItalic',sans-serif;
 #menufor>li:first-child+li>a{
 color:#2c6fad;
 background-image:url(/img/for_ind.png?1);
+border-bottom:3px solid #2e78bb;
+}
+#menufor>li:first-child+li:hover>a{
 border-bottom:3px solid #265f94;
 }
 #menufor>li:first-child+li:hover,#menufor>li:first-child+li.active{
@@ -259,6 +262,9 @@ color:#fff;
 #menufor>li:first-child+li+li+li>a{
 color:#338933;
 background-image:url(/img/for_dev.png?1);
+border-bottom:3px solid #2f8b2f;
+}
+#menufor>li:first-child+li+li+li:hover>a{
 border-bottom:3px solid #2a702a;
 }
 #menufor>li:first-child+li+li+li:hover,#menufor>li:first-child+li+li+li.active{
