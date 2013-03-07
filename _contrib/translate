@@ -14,6 +14,8 @@ sed -i "s_href=\"/en/_href=\"/${1}/_g" _layouts/base-${1}.html
 sed -i "s_src=\"/en/_src=\"/${1}/_g" _layouts/base-${1}.html
 sed -i "s_langcode: en_langcode: ${1}_g" _layouts/base-${1}.html
 sed -i "s_langtext: English_langtext: ${2}_g" _layouts/base-${1}.html
+sed -i "s/ALERT_CLASS_en/ALERT_CLASS_${1}/g" _layouts/base-${1}.html
+sed -i "s/ALERT_en/ALERT_${1}/g" _layouts/base-${1}.html
 sed -i "/langcode: ${1}/d" _config.yml
 sed -i "/langtext: ${2}/d" _config.yml
 sed -i "/langs:/a - langtext: ${2}" _config.yml
