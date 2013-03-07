@@ -1,6 +1,4 @@
 ---
-ALERT_CLASS:
-ALERT:
 langcode: en
 langtext: English
 menufor:
@@ -69,9 +67,11 @@ menu:
   <div id="container3">
     <div id="back1"><div id="back2">
     <div class="wrap">
-{% if page.ALERT %}
-  <div class="alert-message {{ page.ALERT_CLASS }}">
-    {{ page.ALERT }}
+{% if site.ALERT or site.ALERT_en %}
+  {% if site.ALERT_CLASS %}{% assign class = site.ALERT_CLASS%}{% endif %}{% if site.ALERT_CLASS_en %}{% assign class = site.ALERT_CLASS_en%}{% endif %}
+  {% if site.ALERT %}{% assign alert = site.ALERT%}{% endif %}{% if site.ALERT_en %}{% assign alert = site.ALERT_en%}{% endif %}
+  <div class="alert-message {{ class }}">
+    {{ alert }}
   </div>
 {% endif %}
       <div id="content">
