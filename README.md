@@ -8,6 +8,7 @@ Installing dependencies
 # Usage
 
 * update DOWNLOAD\_VERSION in _config.yml
+* run ./_contrib/updatesitemap if you changed pages
 * run jekyll
 * output will be in \_site/
 

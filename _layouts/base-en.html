@@ -33,7 +33,7 @@ menu:
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>{{ page.title }}</title>
-<link rel="stylesheet" href="/{{ page.langcode }}/css/style.css?3" type="text/css">
+<link rel="stylesheet" href="/css/style.css?3" type="text/css">
 <script type="text/javascript" src="/js/scroll.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 </head>
@@ -43,11 +43,9 @@ menu:
     <ul id="lang">
       <li><a href="javascript:void();">{{ page.langtext }}</a>
       <ul>
-        {% for lang in site.langs %}
-        {% if lang.langcode != page.langcode %}
+        {% for lang in site.langs %}{% if lang.langcode != page.langcode %}
         <li><a href="/{{ lang.langcode }}/">{{ lang.langtext }}</a></li>
-        {% endif %}
-        {% endfor %}
+        {% endif %}{% endfor %}
       </ul>
       </li>
     </ul>
@@ -55,25 +53,15 @@ menu:
     <div id="logotext">= { An Open Digital Currency }</div>
     <ul id="menufor">
       <li><a>For</a></li>
-        {% for link in page.menufor %}
-        {% assign active = nil %}
-        {% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}
-        {% if page.url == fullurl %}
-          {% assign active = 'active' %}
-        {% endif %}
-        <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
-        {% endfor %}
+      {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
+      <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% endfor %}
     </ul>
     </div>
   </div>
   <div id="container2">
     <ul id="menu" class="wrap">
-        {% for link in page.menu %}
-        {% assign active = nil %}
-        {% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}
-        {% if page.url == fullurl %}
-          {% assign active = 'active' %}
-        {% endif %}
+        {% for link in page.menu %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
         <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
         {% endfor %}
     </ul>

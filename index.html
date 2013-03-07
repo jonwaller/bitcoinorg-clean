@@ -1,0 +1,16 @@
+---
+---
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Bitcoin</title>
+<meta name="description" content="An open source P2P digital currency. Bitcoin is a currency, a protocol and software that enables instant peer to peer transactions, worldwide payments, low or zero processing fees and much more!" />
+<script>
+var langs={};{% for lang in site.langs %}{% if lang.langcode != page.langcode %}langs['{{ lang.langcode }}']=true;{% endif %}{% endfor %}
+var lang=(navigator.language)?navigator.language:navigator.userLanguage;
+lang=lang.split('_')[0];
+if(!langs[lang])lang='en';
+window.location.href='/'+lang+'/';
+</script>
+</head>
+</html>
