@@ -8,7 +8,7 @@ Installing dependencies
 # Usage
 
 * update DOWNLOAD\_VERSION in _config.yml
-* run ./_contrib/updatesitemap if you changed pages
+* run ./_contrib/updatesitemap if you changed a page
 * run jekyll
 * output will be in \_site/
 
@@ -16,6 +16,7 @@ Installing dependencies
 
 * Find the two letter ISO 639-1 code for your language (fr, en, jp)
 * Run ./_contrib/translate (language code) (language name)
+* Make sure that languages are listed in alphabetical order in _config.yml
 * Rename html files in (lang)/ according to your language. And update links in _layouts/base-(lang).html and (lang)/*.html to reflect your changes.
 * Translate all .html and images files in (lang)/ and _layouts/base-(lang).html
 * A tips for translators, you can preview your work in a simple Google chrome browser with no HTTP server. Just go to the existing english page, open the javascript console with CTRL + SHIFT + J and use the following command to make the page editable : document.body.contentEditable=true
