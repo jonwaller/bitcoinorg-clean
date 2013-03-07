@@ -2,7 +2,7 @@
 
 Installing dependencies
 
-    sudo apt-get install rubygems
+    sudo apt-get install rubygems ruby1.9.1-dev build-essential
     sudo gem install jekyll aquarium json less therubyracer
 
 # Usage
