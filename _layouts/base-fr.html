@@ -50,7 +50,7 @@ menu:
       </li>
     </ul>
     <div id="logo"><a href="/{{ page.langcode }}/"><span>Bitcoin</span></a></div>
-    <div id="logotext">= { An Open Digital Currency }</div>
+    <div id="logotext">= { Une devise virtuelle libre et ouverte }</div>
     <ul id="menufor">
       <li><a>For</a></li>
       {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
