@@ -11,16 +11,12 @@ menufor:
 - text: Enthusiasts
   url: /en/bitcoin-for-enthusiasts
 menu:
+- text: What is Bitcoin
+  url: /en/how-it-works
 - text: How it works
   url: /en/how-it-works
-- text: Vocabulary
-  url: /en/vocabulary
 - text: Resources
   url: /en/resources
-- text: Community
-  url: /en/community
-- text: Development
-  url: /en/development
 - text: Foundation
   url: /en/foundation
 - text: About
@@ -48,16 +44,7 @@ menu:
       </li>
     </ul>
     <div id="logo"><a href="/{{ page.langcode }}/"><span>Bitcoin</span></a></div>
-    <div id="logotext">= { An Open Digital Currency }</div>
-    <ul id="menufor">
-      <li><a>For</a></li>
-      {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
-      <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
-      {% endfor %}
-    </ul>
     </div>
-  </div>
-  <div id="container2">
     <ul id="menu" class="wrap">
         {% for link in page.menu %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
         <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>

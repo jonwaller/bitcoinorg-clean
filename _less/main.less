@@ -1,9 +1,12 @@
+/*FIXME background image in bitcoin.org, rgba radius and etc*/
+
 body{
 background-color:#fefdfa;
 color:#646464;
 font-family:"Helvetica Neue", "Liberation Sans", Arial, sans-serif;
 margin:0;
 padding:0;
+background-image:url(http://bitcoin.org/lib/innerbg.png);
 }
 
 h1,h2{
@@ -38,27 +41,8 @@ border:0;
 }
 
 #container1{
-background-color:#fff;
-}
-#container2{
-background-color:#323232;
-border-bottom:3px solid #000;
-border-top:3px solid #000;
--moz-box-shadow:0px 2px 1px rgba(0,0,0,0.15);
--webkit-box-shadow:0px 2px 1px rgba(0,0,0,0.15);
-box-shadow:0px 2px 1px rgba(0,0,0,0.15);
-background-image:linear-gradient(bottom, #000 0%, #3a3a3a 80%);
-background-image:-o-linear-gradient(bottom, #000 0%, #3a3a3a 80%);
-background-image:-moz-linear-gradient(bottom, #000 0%, #3a3a3a 80%);
-background-image:-webkit-linear-gradient(bottom, #000 0%, #3a3a3a 80%);
-background-image:-ms-linear-gradient(bottom, #000 0%, #3a3a3a 80%);
-}
-
-#back1{
-background:fixed url(/img/back2.png) repeat;
-}
-#back2{
-background:fixed url(/img/back1.png) repeat;
+background-image:-webkit-linear-gradient(bottom, rgba(255, 255, 255,0) 14%, rgb(255, 255, 255) 70%);/*FIXME*/
+height:60px;
 }
 
 #lang,#lang li,#lang ul{
@@ -110,7 +94,7 @@ background:url(/img/lang.png) left no-repeat;
 #logo{
 position:absolute;
 left:0px;
-top:20px;
+top:10px;
 }
 #logo a{
 display:block;
@@ -136,7 +120,7 @@ width:210px;
 height:200px;
 position:absolute;
 right:0px;
-top:0px;
+top:-10px;
 border-radius:5px;
 -webkit-border-radius:5px;
 padding:5px;
@@ -192,8 +176,9 @@ background-image:-ms-linear-gradient(bottom, #e7750c 14%, #e7750c 70%);
 }
 
 #menufor{
+width:660px;
 position:relative;
-bottom:-3px;
+bottom:-10px;
 margin:2px 0px 0px 210px;
 padding:0px;
 height:35px;
@@ -202,7 +187,7 @@ overflow:hidden;
 #menufor li{
 list-style:none;
 float:left;
-margin:0px;
+margin:0px 6px;
 border-top-left-radius:5px;
 border-top-right-radius:5px;
 -webkit-border-top-left-radius:5px;
@@ -214,18 +199,23 @@ font-size:17px;
 display:block;
 text-decoration:none;
 background-repeat:no-repeat;
-background-position:6px 5px;
-padding:6px 6px 3px 34px;
+background-position:0px 4px;
+padding:9px 0px 0px 28px;
 text-shadow:0px 1px 1px rgba(0,0,0,0.15);
 }
 #menufor>li:hover>a,#menufor>li.active>a{
-background-position:6px -19px;
+background-position:6px -20px;
+padding:9px 6px 0px 34px;
 text-shadow:0px 2px 2px rgba(0,0,0,0.4);
+}
+#menufor>li:hover,#menufor>li.active{
+margin:0px 0px;
 }
 #menufor>li:first-child>a{
 padding-left:0px;
 color:#000;
 font-family:'UbuntuBoldItalic',sans-serif;
+display:none;
 }
 #menufor>li:first-child+li>a{
 color:#2c6fad;
@@ -309,7 +299,8 @@ padding:0px;
 margin:0px;
 margin:auto;
 position:relative;
-left:-6px;
+left:208px;
+top:18px;
 height:32px;
 }
 #menu li{
@@ -321,24 +312,19 @@ border-radius:3px;
 }
 #menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
 font-family:'Ubuntu', sans-serif;
-height:18px;
-font-size:90%;
+height:24px;
+font-size:16px;
 display:block;
-color:#dddddd;
+color:rgb(63, 63, 63);
 text-decoration:none;
 padding:6px 10px;
 }
 #menu li:hover a,#menu li.active a{
-color:#fff;
+color:#000;
 }
 #menu li:hover,#menu li.active{
-background-color:#575757;
-background-image:linear-gradient(bottom, #3d3d3d 20%, #575757 80%);
-background-image:-o-linear-gradient(bottom, #3d3d3d 20%, #575757 80%);
-background-image:-moz-linear-gradient(bottom, #3d3d3d 20%, #575757 80%);
-background-image:-webkit-linear-gradient(bottom, #3d3d3d 20%, #575757 80%);
-background-image:-ms-linear-gradient(bottom, #3d3d3d 20%, #575757 80%);
-border:1px solid #000;
+background-color:#fff;
+border:1px solid rgb(216, 216, 216);
 }
 
 #content{
@@ -350,9 +336,12 @@ width:740px;
 text-align:justify;
 background-color:#fff;
 min-height:400px;
--moz-box-shadow:0px 0px 120px rgba(0,0,0,0.05);
--webkit-box-shadow:0px 0px 120px rgba(0,0,0,0.05);
-box-shadow:0px 0px 120px rgba(0,0,0,0.05);
+border-right:2px solid rgb(235, 235, 235);
+border-left:2px solid rgb(235, 235, 235);
+border-top:2px solid rgb(235, 235, 235);
+-moz-box-shadow:0px 15px 70px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow:0px 15px 70px rgba(0, 0, 0, 0.2);
+box-shadow:0px 15px 70px rgba(0, 0, 0, 0.2);
 }
 
 .index,.index ul,.index li{
@@ -530,6 +519,9 @@ margin-right:30px;
 font-size:14px;
 background-color:#fff;
 width:940px;
+border-right:2px solid rgb(235, 235, 235);
+border-left:2px solid rgb(235, 235, 235);
+border-bottom:2px solid rgb(235, 235, 235);
 }
 #footer>div{
 float:left;
